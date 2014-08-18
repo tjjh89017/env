@@ -7,7 +7,7 @@ function install_powerline(){
 	exec "$HOME"/.powerline-shell/install.py
 
 	echo Config fish config.fish
-
+	exec mv ./config.fish "$HOME"/.config/fish/
 }
 
 # install vimrc
