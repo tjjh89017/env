@@ -13,4 +13,10 @@ function install_powerline(){
 # install vimrc
 function install_vimrc(){
 	echo Installing vimrc to "$HOME"/.vimrc
+	exec mv ./vimrc "$HOME"/.vimrc
+}
+
+# install Vundle.vim
+function install_Vundle.vim(){
+	echo Installing Vundle.vim to "$HOME"/.vim/bundle/Vundel.vim
 }
