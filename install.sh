@@ -19,6 +19,12 @@ function install_vimrc(){
 # install Vundle.vim
 function install_Vundle.vim(){
 	echo Installing Vundle.vim to "$HOME"/.vim/bundle/Vundel.vim
-	exec git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	exec vim +PluginInstall +qall
+	exec 'git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
+	exec 'vim +PluginInstall +qall'
+}
+
+# install Homebrew and some software indeed
+function install_Homebrew(){
+	echo Installing HomeBrew
+	exec 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
 }
