@@ -35,3 +35,7 @@ function install_brew_software(){
 	echo 'Installing software'
 	brew install wget git fish
 }
+
+function install_from_git(){
+
+}
