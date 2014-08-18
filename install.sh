@@ -3,6 +3,11 @@
 #install powerline-shell for fish
 function install_powerline(){
 	echo Installing powerline-shell to "$HOME"/.powerline-shell/
+	exec git clone https://github.com/milkbikis/powerline-shell "$HOME"/.powerline-shell
+	exec "$HOME"/.powerline-shell/install.py
+
+	echo Config fish config.fish
+
 }
 
 # install vimrc
