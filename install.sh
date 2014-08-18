@@ -28,3 +28,10 @@ function install_Homebrew(){
 	echo Installing HomeBrew
 	exec 'ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"'
 }
+
+# install some sofeware indeed
+# Todo: use list in file to do that better
+function install_brew_software(){
+	echo Installing software
+	exec 'brew install wget git fish'
+}
