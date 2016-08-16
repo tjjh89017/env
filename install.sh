@@ -26,7 +26,7 @@ function install_Vundle.vim(){
 # install Homebrew and some software indeed
 function install_Homebrew(){
 	echo 'Installing HomeBrew'
-	ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
 # install some sofeware indeed
@@ -36,6 +36,7 @@ function install_brew_software(){
 	brew install wget git fish
 }
 
-function install_from_git(){
-
-}
+install_Homebrew
+install_brew_software
+install_vimrc
+install_Vundle.vim
