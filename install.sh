@@ -7,13 +7,13 @@ function install_powerline(){
 	"$HOME"/.powerline-shell/install.py
 
 	echo Config fish config.fish
-	mv ./config.fish "$HOME"/.config/fish/
+	cp ./config.fish "$HOME"/.config/fish/
 }
 
 # install vimrc
 function install_vimrc(){
 	echo Installing vimrc to "$HOME"/.vimrc
-	mv ./vimrc "$HOME"/.vimrc
+	cp ./vimrc "$HOME"/.vimrc
 }
 
 # install Vundle.vim
