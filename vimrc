@@ -30,3 +30,4 @@ set backspace=indent,eol,start
 
 " powerline
 set laststatus=2
+set showtabline=2
