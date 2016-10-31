@@ -34,6 +34,9 @@ function install_Homebrew(){
 function install_brew_software(){
 	echo 'Installing software'
 	brew install wget git fish
+	brew install vim --with-override-system-vi
+	brew install python
+	brew install python3
 }
 
 install_Homebrew
