@@ -2,7 +2,6 @@
 
 #install powerline-shell for fish
 function install_powerline(){
-
 	echo Config fish config.fish
 	cp ./config.fish "$HOME"/.config/fish/
 }
@@ -33,6 +32,11 @@ function install_brew_software(){
 	brew install wget git fish
 	brew install vim
 	brew install python3
+}
+
+# install some global vairable
+function install_fish_variable(){
+	fish -c 'set -g LANG en_US.UTF-8'
 }
 
 install_Homebrew
