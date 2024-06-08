@@ -22,3 +22,4 @@ wget
 xz
 powerline-go
 wireguard-tools
+curl
