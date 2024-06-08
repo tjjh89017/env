@@ -1,5 +1,9 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
 function fish_prompt
-	~/.powerline-shell/powerline-shell.py $status --shell bare ^/dev/null
+	eval /opt/homebrew/bin/powerline-go -error $status -jobs (count (jobs -p))
 end
 
 function __fish_cancel_commandline

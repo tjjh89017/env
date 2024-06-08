@@ -2,9 +2,6 @@
 
 #install powerline-shell for fish
 function install_powerline(){
-	echo Installing powerline-shell to "$HOME"/.powerline-shell/
-	git clone https://github.com/milkbikis/powerline-shell "$HOME"/.powerline-shell
-	"$HOME"/.powerline-shell/install.py
 
 	echo Config fish config.fish
 	cp ./config.fish "$HOME"/.config/fish/
@@ -26,7 +23,7 @@ function install_Vundle.vim(){
 # install Homebrew and some software indeed
 function install_Homebrew(){
 	echo 'Installing HomeBrew'
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 }
 
 # install some sofeware indeed
@@ -34,8 +31,7 @@ function install_Homebrew(){
 function install_brew_software(){
 	echo 'Installing software'
 	brew install wget git fish
-	brew install vim --with-override-system-vi
-	brew install python
+	brew install vim
 	brew install python3
 }
 
