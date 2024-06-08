@@ -39,6 +39,11 @@ function install_fish_variable(){
 	fish -c 'set -g LANG en_US.UTF-8'
 }
 
+function disable_ds_store(){
+	defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+	defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+}
+
 install_Homebrew
 install_brew_software
 install_vimrc
