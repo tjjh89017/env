@@ -34,17 +34,19 @@ function install_brew_software(){
 	brew install python3
 }
 
-# install some global vairable
-function install_fish_variable(){
-	fish -c 'set -g LANG en_US.UTF-8'
-}
-
 function disable_ds_store(){
 	defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 	defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+}
+
+function install_tmux_conf(){
+	mkdir -p $HOME/.config/tmux
+	cp tmux.conf $HOME/.config/tmux/tmux.conf
 }
 
 install_Homebrew
 install_brew_software
 install_vimrc
 install_Vundle.vim
+disable_ds_store
+install_tmux_conf
