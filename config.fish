@@ -1,6 +1,11 @@
 set -x LANG en_US.UTF-8
 set -x POWERLINE_PATH $HOME/.vim/bundle/powerline
 
+# override python
+set PYTHON $(brew info python --json | jq -r .[0].name)
+set PYTHON_PATH $(brew --prefix)/opt/$PYTHON/libexec/bin
+fish_add_path -pP $PYTHON_PATH
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
