@@ -23,3 +23,5 @@ xz
 powerline-go
 wireguard-tools
 curl
+jq
+yq

@@ -32,6 +32,11 @@ function install_brew_software(){
 	brew install wget git fish
 	brew install vim
 	brew install python3
+
+	for i in $(cat brew.list)
+	do
+		brew install "$i"
+	done
 }
 
 function disable_ds_store(){
