@@ -1,4 +1,5 @@
 set -x LANG en_US.UTF-8
+set -x POWERLINE_PATH $HOME/.vim/bundle/powerline
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
