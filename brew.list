@@ -25,3 +25,4 @@ wireguard-tools
 curl
 jq
 yq
+telnet
