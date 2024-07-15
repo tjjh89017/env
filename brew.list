@@ -8,11 +8,11 @@ ipmitool
 mtr
 ncdu
 nload
-nmap
 pcre
 pcre2
 pv
-python3
+python
+ipython
 tig
 tmux
 tree
@@ -26,3 +26,6 @@ curl
 jq
 yq
 telnet
+iproute2mac
+k9s
+vim
