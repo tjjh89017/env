@@ -6,9 +6,9 @@ fish_add_path /opt/homebrew/bin
 fish_add_path /opt/homebrew/sbin
 
 # override python
-set PYTHON $(brew info python --json | jq -r .[0].name)
-set PYTHON_PATH $(brew --prefix)/opt/$PYTHON/libexec/bin
-fish_add_path -pP $PYTHON_PATH
+#set PYTHON $(brew info python --json | jq -r .[0].name)
+#set PYTHON_PATH $(brew --prefix)/opt/$PYTHON/libexec/bin
+#fish_add_path -pP $PYTHON_PATH
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -18,7 +18,7 @@ function fish_prompt
 	eval /opt/homebrew/bin/powerline-go -error $status -jobs (count (jobs -p))
 end
 
-function __fish_cancel_commandline
-	commandline ""
-	commandline -f repaint
-end
+#function __fish_cancel_commandline
+#	commandline ""
+#	commandline -f repaint
+#end
