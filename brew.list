@@ -11,7 +11,7 @@ nload
 pcre
 pcre2
 pv
-python
+python3
 ipython
 tig
 tmux
