@@ -15,7 +15,7 @@ if status is-interactive
 end
 
 function fish_prompt
-	eval /opt/homebrew/bin/powerline-go -error $status -jobs (count (jobs -p))
+	eval powerline-go -error $status -jobs (count (jobs -p))
 end
 
 #function __fish_cancel_commandline
