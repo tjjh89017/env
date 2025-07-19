@@ -15,7 +15,7 @@ function install_vimrc(){
 # install Vundle.vim
 function install_Vundle.vim(){
 	echo Installing Vundle.vim to "$HOME"/.vim/bundle/Vundle.vim
-	git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
 	vim +PluginInstall +qall
 }
 
