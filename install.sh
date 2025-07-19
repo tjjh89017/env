@@ -40,7 +40,7 @@ function install_brew_software(){
 }
 
 function disable_ds_store(){
-	defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+	defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 	defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 }
 
