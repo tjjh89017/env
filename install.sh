@@ -31,7 +31,7 @@ function install_brew_software(){
 	echo 'Installing software'
 	brew install wget git fish
 	brew install vim
-	brew install python3
+	brew install python
 
 	for i in $(cat brew.list)
 	do
